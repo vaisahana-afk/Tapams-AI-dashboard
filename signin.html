@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17221d" />
+  <title>Sign in | TAPAMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="brand-panel" aria-label="TAPAMS turnaround intelligence">
+      <div class="brand-panel__texture" aria-hidden="true"></div>
+      <div class="brand-panel__topline">
+        <a class="brand" href="index.html" aria-label="TAPAMS home">
+          <img class="brand__logo" src="tapams-logo.svg" alt="TAPAMS Group of Companies" />
+        </a>
+        <span class="brand-panel__date">EST. 2024</span>
+      </div>
+
+      <div class="brand-panel__content">
+        <p class="eyebrow">Business Product AI Intelligence</p>
+        <h1>Make room for<br /><em>what matters.</em></h1>
+        <p class="brand-panel__copy">TAPAMS turns customer, product, and revenue data into a clear intelligence brief with risks, opportunities, and next actions.</p>
+      </div>
+
+      <div class="orbit orbit--large" aria-hidden="true"><span></span></div>
+      <div class="orbit orbit--small" aria-hidden="true"><span></span></div>
+      <div class="brand-panel__footer">
+        <span class="signal"><i></i> All systems calm</span>
+        <span>01 / 04</span>
+      </div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="welcome-title">
+      <div class="form-panel__inner">
+        <div class="mobile-brand">
+          <a class="brand" href="index.html" aria-label="TAPAMS home">
+            <img class="brand__logo" src="tapams-logo.svg" alt="TAPAMS Group of Companies" />
+          </a>
+        </div>
+
+        <div class="form-heading">
+          <p class="eyebrow">Welcome back</p>
+          <h2 id="welcome-title">Sign in to your space.</h2>
+          <p class="form-heading__copy">Pick up right where you left off.</p>
+        </div>
+
+        <form class="login-form" action="upload.html" method="get" novalidate>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <span class="field__error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <div class="field__label-row">
+              <label for="password">Password</label>
+              <a href="#reset" class="text-link">Forgot password?</a>
+            </div>
+            <div class="password-wrap">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="6" required />
+              <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button>
+            </div>
+            <span class="field__error" role="alert"></span>
+          </div>
+
+          <label class="check-row">
+            <input type="checkbox" name="remember" />
+            <span class="check-row__box" aria-hidden="true"></span>
+            <span>Keep me signed in</span>
+          </label>
+
+          <button class="submit-button" type="submit">
+            <span>Sign in</span>
+            <span class="submit-button__arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="signup-prompt"><a href="business-product-ai-intelligence.html" class="text-link">Business Product AI Intelligence guide <span aria-hidden="true">↗</span></a></p>
+        <div class="divider"><span>or continue with</span></div>
+        <div class="social-actions">
+          <button class="social-button" type="button"><span class="social-icon social-icon--google">G</span> Google</button>
+          <button class="social-button" type="button"><span class="social-icon social-icon--apple">●</span> Apple</button>
+        </div>
+        <p class="signup-prompt">New to TAPAMS? <a href="#signup" class="text-link">Create an account <span aria-hidden="true">↗</span></a></p>
+        <p class="legal">By continuing, you agree to our <a href="#terms" class="text-link">Terms</a> and <a href="#privacy" class="text-link">Privacy Policy</a>.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

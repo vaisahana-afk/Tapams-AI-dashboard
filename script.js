@@ -52,5 +52,5 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  window.location.href = 'upload.html';
+  window.location.assign('upload.html');
 });
