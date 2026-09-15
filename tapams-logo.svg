@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-labelledby="title desc">
+  <title id="title">TAPAMS Group of Companies</title>
+  <desc id="desc">TAPAMS logo with a person and blue wing line</desc>
+  <circle cx="121" cy="20" r="16" fill="#f27a2f"/>
+  <path d="M33 54c25 12 45 12 67 2 14-6 28-6 42 0 22 10 43 10 66-2" fill="none" stroke="#55a9d0" stroke-linecap="round" stroke-width="6"/>
+  <path d="M75 92 146 47" fill="none" stroke="#6ac454" stroke-linecap="round" stroke-width="12"/>
+  <path d="M142 47 91 108" fill="none" stroke="#6ac454" stroke-linecap="round" stroke-width="12"/>
+  <path d="M86 108c19 9 42 9 61 0" fill="none" stroke="#55a9d0" stroke-linecap="round" stroke-width="6"/>
+  <text x="120" y="132" fill="#263b75" font-family="Georgia, serif" font-size="23" text-anchor="middle">TAPAMS</text>
+  <text x="120" y="146" fill="#263b75" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Group of Companies</text>
+</svg>

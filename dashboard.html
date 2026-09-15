@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17221d" />
+  <title>Turnaround intelligence | TAPAMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script src="https://unpkg.com/mammoth@1.8.0/mammoth.browser.min.js"></script>
+</head>
+<body class="dashboard-body">
+  <header class="workspace-header">
+    <a class="brand brand--dark" href="index.html" aria-label="TAPAMS home"><img class="brand__logo" src="tapams-logo.svg" alt="TAPAMS Group of Companies" /></a>
+    <div class="workspace-header__right"><span class="workspace-user">Turnaround intelligence</span><a class="sign-out" href="upload.html">Upload another file <span aria-hidden="true">↗</span></a></div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="dashboard-heading">
+      <div><p class="eyebrow">AI intelligence brief</p><h1>Where should<br /><em>attention go?</em></h1></div>
+      <div class="source-pill"><span class="source-pill__dot"></span><span id="source-name">Reading your material...</span></div>
+    </div>
+
+    <div class="insight-banner" id="insight-banner"><span class="insight-banner__icon">✦</span><div><strong id="headline-insight">Building your first intelligence signal.</strong><span id="headline-detail">We are reading the uploaded material and looking for revenue, customer, category, and lifecycle evidence.</span></div></div>
+
+    <section class="metric-grid" aria-label="Key metrics">
+      <article class="metric-card"><span class="metric-card__label">Total value</span><strong id="total-value">--</strong><span class="metric-card__note" id="total-note">from uploaded records</span></article>
+      <article class="metric-card metric-card--lime"><span class="metric-card__label">Customer accounts</span><strong id="customer-count">--</strong><span class="metric-card__note" id="customer-note">unique customers found</span></article>
+      <article class="metric-card metric-card--category"><label class="metric-card__label" for="category-select">Customer category</label><select id="category-select" aria-label="Select customer category"><option value="all">All categories</option></select><span class="metric-card__note" id="category-note">select a category to inspect</span></article>
+      <article class="metric-card metric-card--orange"><span class="metric-card__label">Concentration risk</span><strong id="concentration-risk">--</strong><span class="metric-card__note" id="concentration-note">largest category share</span></article>
+      <article class="metric-card metric-card--dark"><span class="metric-card__label">Lifecycle confidence</span><strong id="lifecycle-confidence">--</strong><span class="metric-card__note" id="lifecycle-note">evidence coverage</span></article>
+    </section>
+
+    <section class="dashboard-card selected-category-card" aria-labelledby="selected-category-title">
+      <div class="dashboard-card__heading"><div><p class="eyebrow">Selected customer category</p><h2 id="selected-category-title">All categories</h2></div><span class="card-kicker" id="selected-category-total">-- value</span></div>
+      <div class="selected-category-layout"><div class="customer-records" id="customer-records"><div class="loading-row">Select a category to inspect customer details...</div></div><div class="category-ai-read"><span class="category-ai-read__icon">✦</span><div><strong id="category-ai-title">AI intelligence</strong><p id="category-ai-detail">Choose CCCP or NCNP to see the commercial meaning, revenue signal, and recommended action.</p></div></div></div>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="dashboard-card category-card">
+        <div class="dashboard-card__heading"><div><p class="eyebrow">Portfolio signal</p><h2>Revenue by motion</h2></div><span class="card-kicker">Category</span></div>
+        <div class="category-list" id="category-list"><div class="loading-row">Deriving category signals...</div></div>
+      </article>
+      <article class="dashboard-card risk-card">
+        <div class="dashboard-card__heading"><div><p class="eyebrow">What needs looking at</p><h2>Risk register</h2></div><span class="card-kicker">AI read</span></div>
+        <div class="risk-list" id="risk-list"><div class="loading-row">Preparing risk signals...</div></div>
+      </article>
+    </section>
+
+    <section class="dashboard-card evidence-card">
+      <div class="dashboard-card__heading"><div><p class="eyebrow">Data readiness</p><h2>What the file can tell us</h2></div><span class="card-kicker" id="record-count">-- records</span></div>
+      <div class="evidence-grid" id="evidence-grid"></div>
+    </section>
+
+    <p class="dashboard-disclaimer">This first read is decision support, not a final forecast. Product-level lifecycle risk becomes precise when the source includes product name, billing date, launch/enhancement date, and owner.</p>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

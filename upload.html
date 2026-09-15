@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17221d" />
+  <title>Upload requirements | TAPAMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+</head>
+<body class="workspace-body">
+  <header class="workspace-header">
+    <a class="brand brand--dark" href="index.html" aria-label="TAPAMS home">
+      <img class="brand__logo" src="tapams-logo.svg" alt="TAPAMS Group of Companies" />
+    </a>
+    <div class="workspace-header__right">
+      <span class="workspace-user">Signed in as <strong>you@example.com</strong></span>
+      <a class="sign-out" href="index.html">Sign out <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="workspace-main">
+    <div class="workspace-intro">
+      <div>
+        <p class="eyebrow">Turnaround intelligence</p>
+        <h1>Start with your<br /><em>requirements.</em></h1>
+      </div>
+      <p class="workspace-intro__copy">Upload the source file for your turnaround plan. TAPAMS will use it as the foundation for your intelligence dashboard.</p>
+    </div>
+
+    <div class="step-line" aria-label="Upload workflow progress">
+      <div class="step step--active"><span>01</span><strong>Upload</strong></div>
+      <div class="step-line__track"></div>
+      <div class="step"><span>02</span><strong>Read & derive</strong></div>
+      <div class="step-line__track"></div>
+      <div class="step"><span>03</span><strong>Dashboard</strong></div>
+    </div>
+
+    <section class="upload-layout" aria-labelledby="upload-title">
+      <div class="upload-card">
+        <div class="upload-card__heading">
+          <div>
+            <p class="eyebrow">Source material</p>
+            <h2 id="upload-title">Add your requirement file</h2>
+          </div>
+          <span class="upload-card__count">01 / 03</span>
+        </div>
+
+        <div class="drop-zone" tabindex="0" role="button" aria-label="Choose a file to upload">
+          <input id="file-input" type="file" aria-label="Choose a requirement file" />
+          <div class="drop-zone__icon" aria-hidden="true">↑</div>
+          <h3>Drop your file here</h3>
+          <p>or <button class="browse-button" type="button">browse from your device</button></p>
+          <span class="drop-zone__hint">Any format accepted · Word, Excel, PDF, PowerPoint, CSV, TXT and more</span>
+        </div>
+
+        <div class="file-preview" hidden>
+          <div class="file-preview__icon" aria-hidden="true">▤</div>
+          <div class="file-preview__details">
+            <strong class="file-preview__name"></strong>
+            <span class="file-preview__meta"></span>
+          </div>
+          <button class="remove-file" type="button" aria-label="Remove selected file">×</button>
+        </div>
+
+        <p class="upload-status" role="status" aria-live="polite"></p>
+        <button class="analyze-button" type="button" disabled>
+          <span>Continue to file reading</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+        <button class="sample-download" type="button"><span aria-hidden="true">↓</span> Download sample effective-dated Excel</button>
+      </div>
+
+      <aside class="upload-note">
+        <span class="upload-note__number">A</span>
+        <div>
+          <h2>One clear source.</h2>
+          <p>Bring the requirement document that holds the context, milestones, owners, risks, or dependencies for your turnaround.</p>
+          <div class="privacy-note"><span aria-hidden="true">✦</span> Your file stays in this workspace</div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script src="upload.js"></script>
+</body>
+</html>
